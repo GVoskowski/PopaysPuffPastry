@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Popay</string>
+    <string name="find_us">More Food</string>
+    <string name="delicious">DELICIOUS</string>
+    <string name="fresh">FRESH</string>
+    <string name="hot">#HOT#</string>
+    <string name="handmade">HANDMADE</string>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backred"
+    android:scrollbars="none"
+    tools:context="com.example.android.jjnic.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/petsa2" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/delicious"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/tmplword" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview1"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/spacebetw"
+            android:text="@string/fresh"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/tmplword" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/spacebetw"
+            android:text="@string/handmade"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/tmplword" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview3"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/paddingTop4"
+            android:text="@string/hot"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/txtSize4" />
+
+        <HorizontalScrollView
+
+            android:id="@+id/fplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview4"
+            android:paddingBottom="@dimen/padBotScrl"
+            android:paddingTop="@dimen/padTopScrl0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fxdHeight"
+                android:background="#fffefe"
+                android:orientation="horizontal"
+                android:padding="@dimen/sqrPad">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp1" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp5" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp6" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp7" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fp8" />
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fplay"
+            android:layout_centerHorizontal="true"
+            android:text="@string/find_us"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txtSizeFnd" />
+
+        <LinearLayout
+            android:id="@+id/socialmedia"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fxdllHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/textview5"
+            android:layout_margin="@dimen/mrgnLL"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClickDial"
+                android:scaleType="fitCenter"
+                android:src="@drawable/phone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClickInsta"
+                android:scaleType="fitCenter"
+                android:src="@drawable/insta" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClickFcbk"
+                android:scaleType="fitCenter"
+                android:src="@drawable/face" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+<dimen name="mrgnLL">24.0dp</dimen>
+<dimen name="fxdllHeight">210.0dp</dimen>
+<dimen name="txtSizeFnd">120.0sp</dimen>
+<dimen name="sqrPad">12.0dp</dimen>
+<dimen name="fxdHeight">330.0dp</dimen>
+<dimen name="padTopScrl0">90.0dp</dimen>
+<dimen name="padBotScrl">90.0dp</dimen>
+<dimen name="txtSize4">108.0sp</dimen>
+<dimen name="paddingTop4">150.0dp</dimen>
+<dimen name="marginTop">855.0dp</dimen>
+<dimen name="spacebetw">120.0dp</dimen>
+<dimen name="tmplword">90.0sp</dimen>
+<dimen name="attn">165.0sp</dimen>
+
+</resources>
